@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Search User</title>
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #ff8a00, #ffc837);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+            filter: drop-shadow(0 0 0.75rem slategray);
+        }
+
+        h1 span {
+            font-size: 48px;
+        }
+
+        h2 {
+            color: midnightblue;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        #subButton {
+            padding: 10px 20px;
+            background-color: #ff6f00;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+            filter: drop-shadow(0 0 0.5rem crimson);
+        }
+
+        #subButton:hover {
+            background-color: #ffa726;
+            filter: drop-shadow(0 0 0.5rem #ffc837);
+        }
+
+        input[type="text"], textarea {
+            background-color : #ffb7c5;
+            color: white;
+        }
+
+        hr {
+            border: 0;
+            border-top: 5px solid #444;
+            margin: 20px 50px;
+        }
+
+        @keyframes moveHome {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-1000px);
+            }
+        }
+
+        #home {
+            float: right;
+            margin-left: 75px;
+            margin-right: 75px;
+            animation: moveHome 3s infinite alternate;
+            width: 49px;
+        }
+
+        #home:hover {
+            cursor: pointer;
+            animation-play-state: running;
+        }
+
+        #home:not(:hover) {
+            animation-play-state: paused;
+            cursor: default
+        }
+    </style>
+</head>
+
+<body>
+	<h2>Input an Instagram Username</h2>
+    <div class="button-container">
+        <form action="http://localhost:<%= num %>/searchProcess" method="post">
+            
+            <strong>Username: </strong><input type="text" id="username" name="username" placeholder="nppcd">
+            <input type="submit" value="Search" id="subButton"/>
+        </form>
+    </div>
+    <hr>
+    <div id="home">
+	    <a href="/">HOME</a>
+    </div>
+	
+</body>
+
+
+</html>

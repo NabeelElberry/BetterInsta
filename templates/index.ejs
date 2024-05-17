@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Better Insta</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #ff8a00, #ffc837);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+            filter: drop-shadow(0 0 0.75rem slategray);
+        }
+
+        h1 span {
+            font-size: 48px;
+        }
+
+        h2 {
+            color: midnightblue;
+        }
+
+        .inner_text_shadow {
+            text-shadow: 1px 1px white, -1px -1px #444;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff6f00;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+            filter: drop-shadow(0 0 0.5rem crimson);
+        }
+
+        button:hover {
+            background-color: #ffa726;
+            filter: drop-shadow(0 0 0.5rem #ffc837);
+        }
+
+        hr {
+            border: 0;
+            border-top: 5px solid #444;
+            margin: 20px 50px;
+        }
+    </style>
+</head>
+
+<body>
+	<h1 class="inner_text_shadow"><span>B</span>etter<span>I</span>nsta</h1>
+
+	<div class="button-container">
+        <a href="/search"><button>Search for a user on Instagram</button></a>
+    </div>
+	<hr>
+
+   
+
+	<div>
+        <h2>Admin</h2>
+        <div class="button-container">
+        <%#<a href="/followCount"><button>Select Users (# Followers)</button></a> %>
+        <a href="/searchHistory"><button>Search History</button></a>
+        <a href="/removeHistory"><button> Remove All Applications</button></a>
+    </div>
+</div>
+	<hr>
+</body>
+
+</html>
