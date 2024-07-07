@@ -1,0 +1,3 @@
+Project for CMSC335.
+User is able to enter an instagram user and come back with information such as followers, likes, etc...
+Also stores the previous users entered as history, with operations including adding and deleting history.
